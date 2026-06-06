@@ -73,6 +73,7 @@ sequenceDiagram
 * **비동기 격리**: 이벤트 데이터를 클라이언트(SSE)로 전송할 때 발생하는 지연이 K8s Watcher 스레드에 영향을 주지 않도록 **이벤트 루프 스레드 풀을 비동기 분리**하였습니다.
 * **자원 누수 원천 차단**: 클라이언트의 비정상 종료, 이탈 발생 시 `cleanup` 컨트롤러와 Emitter Callback을 통해 백엔드의 백그라운드 스레드 및 HTTP 커넥션 자원을 즉각 반환합니다.
 
+### 3. [Kubernetes Watch API와 SSE: 실시간 데이터 동기화 문제와 해결 방법](Kubernetes_Watch_API와_SSE_실시간_데이터_동기화_문제와_해결_방법.md)
 ---
 
 ## 🔌 API 규격서 (API Specification)
@@ -90,7 +91,7 @@ sequenceDiagram
 
 ---
 
-## 🛠️ 개발 환경 및 사양 (Requirements)
+## 🛠️ 개발 환경 및 사양
 
 ### 1. 기술 스택 버전 정보
 * **Backend**: Java 23 (OpenJDK), Spring Boot 3.4.1, Kubernetes Java Client 20.0.0, Gradle
@@ -182,9 +183,7 @@ npm run dev
 
 ---
 
-## 💎 코드 리팩토링 및 개선 내역 요약 (Refactoring Summary)
-
-본 프로젝트는 프로토타입의 자원 누수 및 구조적 취약점을 보완하기 위해 다각도의 리팩토링을 수행했습니다. 상세 기술 원리 및 소스 코드 연동 설명은 각 파트별 [README] 링크를 참조하십시오.
+## 💎 코드 리팩토링 및 개선 내역 요약
 
 | 리팩토링 구분 | 개선 요약 항목 | 상세 기술적 성과 및 의도 | 상세 가이드 링크 |
 | :--- | :--- | :--- | :--- |
