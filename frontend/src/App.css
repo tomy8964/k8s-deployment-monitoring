@@ -1,0 +1,111 @@
+/* 전체 컨테이너 */
+.app-container {
+  font-family: 'Noto Sans KR', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #FDFCF2;
+  /* 따뜻한 아이보리 배경 */
+  min-height: 100vh;
+  /* 화면 전체 채우기 */
+  overflow-x: hidden;
+  /* 가로 스크롤 방지 */
+}
+
+/* 상단 헤더 */
+.header {
+  background-color: #42d856a6;
+  /*  초록색 */
+  color: #FFFFFF;
+  padding: 14px 28px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  /* 부드러운 그림자 */
+  display: flex;
+  align-items: center;
+}
+
+.header-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0;
+}
+
+
+/* 헤더 링크 */
+.header-link {
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+  text-decoration: none;
+  color: inherit;
+}
+
+.right-align {
+  margin-left: auto;
+}
+
+.header-link:hover {
+  opacity: 0.8;
+  /* 링크에 마우스 호버시 약간 투명 */
+}
+
+/* 메인 콘텐츠 */
+.main {
+  padding-top: 70px;
+  /* 헤더 높이만큼 공간 추가 */
+  display: flex;
+  justify-content: center;
+  /* 콘텐츠를 가운데 정렬 */
+  align-items: flex-start;
+  /* 상단 정렬 (일반적으로 콘텐츠는 상단에 나옴) */
+}
+
+/* 콘텐츠 래퍼 */
+.content-wrapper {
+  width: 100%;
+  max-width: 1200px;
+  /* 최대 너비 제한 */
+  background-color: #FFFFFF;
+  /* 흰색 배경 */
+  border-radius: 16px;
+  /* 둥근 모서리 */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  /* 부드러운 그림자 */
+  padding: 24px;
+  /* 내부 여백 */
+  margin: 16px;
+  /* 외부 간격 */
+}
+
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+  .header {
+    padding: 10px 16px;
+  }
+
+  .header-title {
+    font-size: 18px;
+  }
+
+  .content-wrapper {
+    padding: 16px;
+    /* 모바일에서 내부 간격 감소 */
+    margin: 8px;
+    /* 외부 간격도 감소 */
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    padding: 8px 12px;
+  }
+
+  .header-title {
+    font-size: 16px;
+    /* 가장 작은 화면에서는 글씨 크기 축소 */
+  }
+}

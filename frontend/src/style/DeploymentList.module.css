@@ -1,0 +1,39 @@
+/* 리스트 컨테이너 */
+.listContainer {
+    background-color: #fdfcf2;
+    /* ham 아이보리 배경 */
+    padding: 24px;
+    min-height: 100vh;
+    /* 화면 전체 채우기 */
+    box-sizing: border-box;
+}
+
+/* 페이지 제목 */
+.pageTitle {
+    font-size: 24px;
+    font-weight: 700;
+    color: #ff7e36;
+    /* ham 주황색 */
+    margin-bottom: 16px;
+    text-align: center;
+    /* 중앙 정렬 */
+}
+
+/* 에러 메시지 */
+.errorMessage {
+    color: #ff4d4f;
+    /* 빨간 경고 텍스트 */
+    font-size: 16px;
+    text-align: center;
+    margin-top: 16px;
+    font-weight: 500;
+}
+
+/* 빈 데이터 텍스트 */
+.noDataText {
+    font-size: 16px;
+    color: #888888;
+    /* 회색 텍스트 */
+    text-align: center;
+    margin-top: 24px;
+}
