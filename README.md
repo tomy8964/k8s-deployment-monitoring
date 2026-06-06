@@ -7,7 +7,7 @@
 ## 📌 프로젝트 소개
 
 **ham 모니터(`ham Monitor`)** 는 Kubernetes 클러스터 내의 Deployment 리소스를 실시간으로 감시하고 관리할 수 있는 고품질 웹 기반 SRE(Site Reliability Engineering) 대시보드입니다.  
-본 프로젝트는 **K8s API 서버의 오버헤드를 원천적으로 방지**하면서, **5초 이내의 실시간 상태 데이터 동기화(Real-time State Synchronization)**를 안정적으로 수행할 수 있도록 설계되었습니다.
+본 프로젝트는 **K8s API 서버의 오버헤드를 원천적으로 방지**하면서, **5초 이내의 실시간 상태 데이터 동기화(Real-time State Synchronization)** 를 안정적으로 수행할 수 있도록 설계되었습니다.
 
 ### 🌟 핵심 기능
 * **Namespace 탐색 및 통합 관리**:
