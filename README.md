@@ -1,6 +1,6 @@
 # ham 모니터 (ham Monitor) - Kubernetes 실시간 배포 모니터링 시스템
 
-**작성자**: 함건욱 (Internship Candidate)
+**작성자**: 함건욱
 
 ---
 
